@@ -10,7 +10,7 @@ def get_all_windows():
 def move_window(title, x, y):
     hwnd = win32gui.FindWindow(None, title)
     if hwnd == 0:
-        print("窗口未找到")
+        print("window not found")
         return
     win32gui.MoveWindow(hwnd, x, y, 0, 0, True)
 
